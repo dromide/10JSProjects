@@ -2,10 +2,139 @@
 
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+img{
+  max-width: 100%;
+}
+.mobile-container{
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+header input{
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+}
+header button{
+  background-color: transparent;
+  border: none;
+  color: rgb(138, 129, 141);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fav-container{
+  background-color: rgb(243, 225, 255);
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+.fav-meals{
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+.fav-meals li{
+  width: 75px;
+  margin: 5px;
+  position: relative;
+}
+.fav-meals li .clear{
+  background-color: transparent;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  cursor: pointer;
+}
+.fav-meals li:hover .clear{
+  opacity: 1;
+}
+.fav-meals li img{
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 0 10px 2px #3333331a;
+}
+.fav-meals li span{
+  font-size: 0.9rem;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 75px;
+}
+.fav-meals li:hover span{
+  white-space: normal;
+  overflow: auto;
+}
+.meal{
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px #3333331a;
+  margin: 1.5rem;
+  overflow: hidden;
+}
+.meal-header{
+  position: relative;
+}
+.meal-header .random{
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 1rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal-header img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+
+}
+.meal-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.meal-body h4{
+  margin: 0;
+}
+.meal-body .fav-btn{
+  border: none;
+  background-color: transparent;
+  color: rgb(197, 188, 188);
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+.meal-body .fav-btn.active{
+  color: rebeccapurple;
 }
