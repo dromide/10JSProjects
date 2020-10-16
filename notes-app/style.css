@@ -2,10 +2,62 @@
 
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #7bdaf3;
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 3rem;
+}
+.add{
+  background-color: #9ec862;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.note{
+  background-color: #fff;
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+}
+.note .tools{
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.note .tools button{
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.note .main{
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+
+}
+.note textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  font-size: 1.2rem;
+}
+.note .hidden{
+  display: none;
 }
