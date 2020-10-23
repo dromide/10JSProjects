@@ -7,4 +7,38 @@
 body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: linear-gradient(300deg, #CED1D6, #bfc0c0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
+input{
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-family: inherit;
+  padding: 1rem;
+  min-width: 300px;
+  font-size: 1rem;
+}
+input:focus{
+  outline: none;
+}
+.weather{
+  font-size: 2rem;
+  text-align: center;
+}
+.weather h2{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+/* .weather small{
+  font-size: 1rem;
+} */
+/* .weather img{
+  transform: scale(2);
+} */
